@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Banner from "./components/Banner";
+import Conocenos from "./components/Conocenos";
+import Header from "./components/Header";
+import Products from "./components/Products";
+import Promociones from "./components/Promociones";
+import RedesSociales from "./components/RedesSociales";
+import SimpleBottomNavigation from "./components/SimpleBottomNavigation";
+import Ubicacion from "./components/Ubicacion";
+
+console.log(window.outerWidth);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Banner imagen={"/images/fondo-pedacito.png"} />
+      <Conocenos />
+      <Products />
+      <Banner imagen={"/images/logosazón.jpg"} />
+      <Promociones />
+      <Ubicacion />
+      <RedesSociales />
+      {window.outerWidth < 768 && <SimpleBottomNavigation />}
     </div>
   );
 }
