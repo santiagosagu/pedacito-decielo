@@ -3,11 +3,11 @@ import React from "react";
 const Conocenos = () => {
   return (
     <div
-      className="w-full flex justify-center mt-0"
-      style={{ backgroundColor: "#eaddd7" }}
+      className="w-full flex justify-center"
+      style={{ backgroundColor: "#23a1cf" }}
       id="conocenos"
     >
-      <div className="sm:flex items-center mb-8 pt-8 sm:p-0">
+      <div className="sm:flex items-center h-auto pt-8 sm:p-0">
         <div>
           <h3 className="text-2xl mb-8 text-center sm:text-start">
             Somos el primer punto de venta enfocado en conservar la sazón y
@@ -21,10 +21,14 @@ const Conocenos = () => {
         </div>
         <div className="w-full">
           <img
-            src="/images/mujer-morena.jpg"
-            alt="iamgen-mujer-morena"
+            src="images/solmarina-vect.jpg"
+            alt="imagen-conocenos"
             className="w-full h-full"
           />
+          {/* <img
+            src="/images/mujer-morena.jpg"
+            alt="iamgen-mujer-morena"
+          /> */}
         </div>
       </div>
     </div>
